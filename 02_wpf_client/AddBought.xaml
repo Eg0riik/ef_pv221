@@ -1,0 +1,33 @@
+﻿<Window x:Class="_02_wpf_client.AddBought"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_02_wpf_client"
+        mc:Ignorable="d"
+        Title="AddBought" Height="200" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+
+        <Label Content="Price" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox x:Name="PriceTB" Grid.ColumnSpan="3" Margin="133,0,0,0"/>
+        <Label Content="Seller" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+        <TextBox x:Name="SellerTB" Grid.ColumnSpan="3" Margin="133,46,0,0" Grid.RowSpan="2" />
+        <Label Content="Buyer" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2"/>
+        <TextBox x:Name="BuyerTB" Grid.Row="1" Grid.ColumnSpan="3" Margin="133,46,0,0" Grid.RowSpan="2" />
+
+        <Button x:Name="Add" Grid.Row="2" Click="Add_Click" Grid.ColumnSpan="3" Margin="133,46,133,0" Grid.RowSpan="2" >Add</Button>
+    </Grid>
+</Window>

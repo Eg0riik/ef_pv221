@@ -1,0 +1,42 @@
+﻿<Window x:Class="_02_wpf_client.AddTreck"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_02_wpf_client"
+        mc:Ignorable="d"
+        Title="AddTreck" Height="250" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+        <Label Content="Name" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox x:Name="name" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Label Content="Length" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+        <TextBox x:Name="LengthTB" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <Label Content="Number of Auditions" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2"/>
+        <TextBox x:Name="NumberOfAuditionsTb" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" />
+        <Label Content="MusicalRecordId" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3"/>
+        <TextBox x:Name="MusicalRecordIdTB" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" />
+        <Label Content="GroupId" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4"/>
+        <TextBox x:Name="GroupIdTB" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" />
+
+        <Label Content="GanreId" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5"/>
+        <TextBox x:Name="GanreIdTb" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" />
+
+
+        <Button x:Name="Add" Grid.Row="6" Click="Add_Click" Grid.ColumnSpan="3" Margin="133,0,133,0" >Add</Button>
+    </Grid>
+</Window>

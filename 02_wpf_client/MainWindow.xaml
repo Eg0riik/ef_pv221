@@ -1,0 +1,42 @@
+﻿<Window x:Class="_02_wpf_client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_02_wpf_client"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel>
+        <Grid DockPanel.Dock="Top" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ComboBox>
+                <ComboBoxItem Content="Show all Bought" Name="AllBought" Selected="AllBought_Selected"/>
+                <ComboBoxItem Content="Show all Buyer" Name="AllBuyer" Selected="AllBuyer_Selected"/>
+                <ComboBoxItem Content="Show all Genre" Name="AllGenre" Selected="AllGenre_Selected"/>
+                <ComboBoxItem Content="Show all Group" Name="AllGroup" Selected="AllGroup_Selected"/>
+                <ComboBoxItem Content="Show all MusicalRecord" Name="AllMusicalRecord" Selected="AllMusicalRecord_Selected"/>
+                <ComboBoxItem Content="Show all Order" Name="AllOrder" Selected="AllOrder_Selected"/>
+                <ComboBoxItem Content="Show all Seller" Name="AllSeller" Selected="AllSeller_Selected"/>
+                <ComboBoxItem Content="Show all Track" Name="AllTrack" Selected="AllTrack_Selected"/>
+            </ComboBox>
+            <ComboBox Grid.Column="1">
+                <ComboBoxItem Content="Add Bought" Name="Add_Bought" Selected="AddBought_Selected"/>
+                <ComboBoxItem Content="Add Buyer" Name="Add_Buyer" Selected="AddBuyer_Selected"/>
+                <ComboBoxItem Content="Add Genre" Name="Add_Genre" Selected="AddGenre_Selected"/>
+                <ComboBoxItem Content="Add Group" Name="Add_Group" Selected="AddGroup_Selected"/>
+                <ComboBoxItem Content="Add MusicRecord" Name="Add_MusicRecord" Selected="AddMusicRecord_Selected"/>
+                <ComboBoxItem Content="Add Order" Name="Add_Order" Selected="AddOrder_Selected"/>
+                <ComboBoxItem Content="Add Seller" Name="Add_Seller" Selected="AddSeller_Selected"/>
+                <ComboBoxItem Content="Add Track" Name="Add_Track" Selected="AddTrack_Selected"/>
+            </ComboBox>
+        </Grid>
+    <Grid>
+        <DataGrid x:Name="tableView"/>
+    </Grid>
+    </DockPanel>
+    
+</Window>
